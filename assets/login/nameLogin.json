@@ -1,0 +1,27 @@
+[
+    {
+        "name": "default",
+        "photos": []
+    },
+    {
+        "name": "joff",
+        "photos": [
+            {
+                "photo": "https://cdn.pixabay.com/photo/2022/01/17/09/28/spider-webs-6944213__340.jpg",
+                "id": 1642949669824
+            },
+            {
+                "photo": "https://cdn.pixabay.com/photo/2022/01/17/10/13/nature-6944307__340.jpg",
+                "id": 1643016883657
+            },
+            {
+                "photo": "https://cdn.pixabay.com/photo/2022/01/10/15/29/wind-mills-6928590__340.jpg",
+                "id": 1643016897686
+            },
+            {
+                "photo": "https://cdn.pixabay.com/photo/2021/12/15/20/21/sea-6873335__340.jpg",
+                "id": 1643016907643
+            }
+        ]
+    }
+]

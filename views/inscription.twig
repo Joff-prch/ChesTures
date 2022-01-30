@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    {# <link rel="stylesheet" href="css.css"> #}
+    <title>CV</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="inscription_box">
+            <h1>Inscription</h1>
+            <form action="/inscription" method="post" class="login_form">
+                <input type="text" class="formx" placeholder="Choisir un Pseudo" id="newpseudo" name="newpseudo">
+                <a class="inscription_login_link" href='/'>Déjà inscrit ? Se connecter</a>
+                <p class='error'>{{message}}</p>
+                <button class="formx" type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

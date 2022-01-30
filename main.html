@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="css.css">
+    <title>ChesTures</title>
+</head>
+<body>
+    <section class="container">
+        <a href="/" class="deconnexion">Déconnexion</a>
+        <div class="main_box">
+            <h1>ChesTures</h1>
+            <form class="main_form" action="/main" method="post">
+                <input class="main_input" type="text" placeholder="URL de la photo" id="photo" name="photo">
+                <!-- {{mes}} -->
+                <button class="formx">Enregistrer</button>
+            </form>
+        </div>
+        <!-- Poubelle -->
+        <div id='bin' name='bin' onDragOver="return over(event)" onDrop="return drop(event)" onDragLeave="leave(event)"> </div>
+        <form method="post" id="trashForm" action="/remove" style="visibility:hidden">
+            <input type="text" id="image_id" name="url_img" >
+        </form>
+        <div id="pic" name="pic" onDragStart="start(event)">
+            {{photos}}
+        </div>
+    </section>
+    <script src='./app.js'></script>
+</body>
+</html>
