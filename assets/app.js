@@ -38,18 +38,18 @@ function disco(){
 // copié collé
 
 
-function copyz(e){
+function copyToClipB(e){
+    console.log(e.currentTarget.src);
     navigator.clipboard.writeText('');
     navigator.clipboard.writeText(e.currentTarget.src);
     document.querySelector('.copied').className += ' anim_cpied';
     setTimeout(copiedReset, 500)
 
-    
-    
-
-
-
 }
+
+
+
+
 
 function copiedReset(){
     document.querySelector('.copied').className = 'copied';
